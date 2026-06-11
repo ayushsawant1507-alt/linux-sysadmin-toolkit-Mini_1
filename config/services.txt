@@ -1,0 +1,7 @@
+# Services to monitor (one service name per line)
+# Blank lines and lines starting with # will be ignored.
+
+sshd
+nginx
+docker
+cron
