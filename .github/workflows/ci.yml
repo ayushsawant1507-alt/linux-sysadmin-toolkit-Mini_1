@@ -1,0 +1,16 @@
+name: Bash CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate Bash Script
+        run: bash -n bin/health_check.sh
